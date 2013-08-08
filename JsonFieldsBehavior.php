@@ -43,14 +43,14 @@ class JsonFieldsBehavior extends CActiveRecordBehavior
     protected function encode()
     {
         foreach ($this->attributes as $attribute) {
-            $this->owner->$attribute = json_encode($this->owner->$attribute);
+            $this->owner->$attribute = CJSON::encode($this->owner->$attribute);
         }
     }
 
     protected function decode()
     {
         foreach ($this->attributes as $attribute) {
-            $this->owner->$attribute = json_decode($this->owner->$attribute, $this->arrayMode);
+            $this->owner->$attribute = CJSON::decode($this->owner->$attribute, $this->arrayMode);
         }
     }
 }
