@@ -1,0 +1,21 @@
+{
+    "name": "urmaul/yii-jsonfields",
+    "type": "library",
+    "description": "Yii CActiveRecord behavior that allows to create array attributes which are stored in DB using json.",
+    "keywords": ["yii", "CActiveRecord", "json", "behavior"],
+    "homepage": "https://github.com/urmaul/jsonfields",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bogdan Kolbik"
+        }
+    ],
+    "require": {
+        "yiisoft/yii": "~1.1.15"
+    },
+    "autoload": {
+        "classmap": [
+            "JsonFieldsBehavior.php"
+        ]
+    }
+}
