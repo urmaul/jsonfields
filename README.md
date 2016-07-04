@@ -1,3 +1,5 @@
+Abandoned since [Mysql supports json itself](https://dev.mysql.com/doc/refman/5.7/en/json.html).
+
 # JsonFields Yii Behavior
 
 Yii CActiveRecord behavior that allows to create array attributes which are stored in DB using json.
